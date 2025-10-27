@@ -70,7 +70,13 @@ export default function Home(){
         <div className="flex justify-center items-center">
       <div className="border-t-2 border-gray w-full mt-8"></div>
     </div>
-        <div className="grid grid-cols-4 gap-4 p-6 justify-center">
+        <div 
+        className="grid gap-x-6 gap-y-4 justify-start 
+          sm:grid-cols-2       /* Phone Screens (640px tak): 2 columns */
+          md:grid-cols-3       /* Tablet Screens (768px tak): 3 columns */
+          lg:grid-cols-4       /* Laptop/Large Screens (1024px aur upar): 4 columns */
+        "
+      >
           <div className="text-black leading-loose">
             <p className="text-2xl font-bold">Popular Cities</p>
             <a href="/sale" className="text-black leading-normal text-2xl hover:underline">
