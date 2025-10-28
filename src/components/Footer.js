@@ -6,16 +6,17 @@ export default function Footer(){
     <footer className="bg-white py-6 px-4 lg:px-16 text-gray-700 font-sans border-t border-gray-200">
 
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6">
-        <div className="flex flex-wrap text-lg font-bold mb-4 lg:mb-0 space-x-4">
-          <a href="ZR" className="hover:text-blue-600">VState Realty, Brokerage</a>
-          <a href="Contact" className="hover:text-blue-600">Contact</a>
-          <a href="Privacy" className="hover:text-blue-600">Privacy & Terms</a>
-          <a href="site" className="hover:text-blue-600">Sitemap</a>
-          <a href="mobile" className="hover:text-blue-600">Mobile</a>
-          <button className="flex items-center hover:text-blue-600">
-            Offices <span className="ml-1">+</span>
-          </button>
-        </div>
+   <div className="flex flex-wrap justify-center lg:justify-start text-base sm:text-lg font-bold mb-4 lg:mb-0 space-x-0 sm:space-x-4 space-y-2 sm:space-y-0 text-center lg:text-left">
+  <a href="ZR" className="w-full sm:w-auto hover:text-blue-600">VState Realty, Brokerage</a>
+  <a href="Contact" className="w-full sm:w-auto hover:text-blue-600">Contact</a>
+  <a href="Privacy" className="w-full sm:w-auto hover:text-blue-600">Privacy & Terms</a>
+  <a href="site" className="w-full sm:w-auto hover:text-blue-600">Sitemap</a>
+  <a href="mobile" className="w-full sm:w-auto hover:text-blue-600">Mobile</a>
+  <button className="w-full sm:w-auto flex justify-center sm:justify-start items-center hover:text-blue-600">
+    Offices <span className="ml-1">+</span>
+  </button>
+</div>
+
         
         {/* Right Section: Join Button */}
         <div className="flex items-center space-x-12">
