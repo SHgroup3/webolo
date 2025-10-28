@@ -37,9 +37,9 @@ export default function Home(){
     <div className="flex flex-col justify-center mt-4">
        <h1 className="text-2xl font-bold text-center mb-4">Find Real Estate & MLS® Listings in Canada</h1>
        <p className="text-center text-xl max-w-2xl mx-auto px-4 text-lg text-gray-900 leading-relaxed">Whether you want to purchase a home for sale, looking for a place to rent,
-        or selling your home, Zolo makes it easy for you to find Canada real estate. 
-        On Zolo, you can search the latest Canadian MLS® listings. 
-        Every 15 minutes, Zolo is updated with new real estate listings,
+        or selling your home, VState makes it easy for you to find Canada real estate. 
+        On VState, you can search the latest Canadian MLS® listings. 
+        Every 15 minutes, VState is updated with new real estate listings,
         so you'll see many of the same listings you'd find on Realtor.ca.
         Narrow your home search to exactly what you're looking for by filtering homes
         by property type, price, bedrooms, size, and custom keywords. You can browse homes 
@@ -54,7 +54,7 @@ export default function Home(){
         <p className="text-center text-xl max-w-2xl mx-auto px-4 text-lg text-gray-900 leading-relaxed">
           Search MLS® listings by location with our
           <a href="/bug"className="underline decoration-black-700 font-bold text-blue-400"> MLS® CA map </a> for Canada-wide real estate. 
-          Zolo gives you local insights on condos, townhouses, and houses for sale, apartments 
+          VState gives you local insights on condos, townhouses, and houses for sale, apartments 
           for rent, and the hottest neighborhoods in each city. Use current housing market trends 
           and stats so you can make a well-informed decision on buying a new home, including 
           <a href="/bug"className="underline decoration-black-700 font-bold text-blue-400"> Toronto real estate trends, Vancouver market stats </a> and more. Use our
@@ -71,7 +71,7 @@ export default function Home(){
       <div className="border-t-2 border-gray w-full mt-8"></div>
     </div>
         <div 
-        className="grid gap-x-6 gap-y-4 justify-start 
+        className="grid gap-x-6 gap-y-4 justify-start px-8
           sm:grid-cols-2       /* Phone Screens (640px tak): 2 columns */
           md:grid-cols-3       /* Tablet Screens (768px tak): 3 columns */
           lg:grid-cols-4       /* Laptop/Large Screens (1024px aur upar): 4 columns */
@@ -246,7 +246,7 @@ export default function Home(){
         The listing data is provided under copyright by the Toronto Regional Real Estate Board
          (TRREB). The information provided herein must only be used by consumers that have a 
          bona fide interest in the purchase, sale or lease of real estate and may not be used for
-          any commercial purpose or any other purpose. The data is deemed reliable but is not guaranteed accurate by the Toronto Regional Real Estate Board nor Zolo. The information provided on this page, including the Affordability, Afford Score™, and Affordability Coach, are provided for informational purposes only and should not be used or construed as financial or investment advice by any individual. No representations or warranties, express or implied, are made by Zolo or its affiliates as to the accuracy or completeness of the information on this page.
+          any commercial purpose or any other purpose. The data is deemed reliable but is not guaranteed accurate by the Toronto Regional Real Estate Board nor VState. The information provided on this page, including the Affordability, Afford Score™, and Affordability Coach, are provided for informational purposes only and should not be used or construed as financial or investment advice by any individual. No representations or warranties, express or implied, are made by VState or its affiliates as to the accuracy or completeness of the information on this page.
       </p>
     </div>
         <div className="flex justify-center items-center">

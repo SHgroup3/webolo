@@ -7,7 +7,7 @@ export default function Footer(){
 
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6">
         <div className="flex flex-wrap text-lg font-bold mb-4 lg:mb-0 space-x-4">
-          <a href="ZR" className="hover:text-blue-600">Zolo Realty, Brokerage</a>
+          <a href="ZR" className="hover:text-blue-600">VState Realty, Brokerage</a>
           <a href="Contact" className="hover:text-blue-600">Contact</a>
           <a href="Privacy" className="hover:text-blue-600">Privacy & Terms</a>
           <a href="site" className="hover:text-blue-600">Sitemap</a>
@@ -21,7 +21,7 @@ export default function Footer(){
         <div className="flex items-center space-x-12">
           <h2 className="text-xl font-bold text-gray-800 hidden lg:block">Are You a REALTOR®?</h2>
           <button className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg text-base whitespace-nowrap">
-            Join Zolo Today!
+            Join VState Today!
           </button>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function Footer(){
       </div>
       <div className="text-xs space-y-4">
         <p className='text-lg'>
-          <strong className="text-lg">Zolo Realty, Brokerage</strong>, the Zolo Web App, and the Zolo App are operated under license from Questrade, Inc. Zolo Ventures Ltd., its subsidiaries, Community Trust Company ("CTC"), Flexiti Financial Inc. and Questrade, Inc. are members of the **Questrade Group of Companies**. Questrade Group of Companies means Questrade Financial Group Inc. and its affiliates that provide deposit, investment, loan, securities, mortgages, real estate and other products or services.
+          <strong className="text-lg">VState Realty, Brokerage</strong>, the VState Web App, and the VState App are operated under license from Questrade, Inc. VState Ventures Ltd., its subsidiaries, Community Trust Company ("CTC"), Flexiti Financial Inc. and Questrade, Inc. are members of the **Questrade Group of Companies**. Questrade Group of Companies means Questrade Financial Group Inc. and its affiliates that provide deposit, investment, loan, securities, mortgages, real estate and other products or services.
         </p>
         <p className='text-lg'>
           The **REALTOR® trademark** is controlled by The Canadian Real Estate Association (**CREA**) and identifies real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos identify professional services rendered by REALTOR® members of CREA to effect the purchase, sale and lease of real estate as part of a cooperative selling system. <span className="text-gray-500">0.45 index</span>
