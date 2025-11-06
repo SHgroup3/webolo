@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { FiSearch, FiHeart, FiBell, FiMenu, FiX } from "react-icons/fi";
 import VState from "../assets/VState.jpeg";
+import Modal from './modal'; 
+import ModalContent from "./ModelContent";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+const [modalStep, setModalStep] = useState(0);
 
+  const handleOpenModal = () => setModalStep(1); // Sign In پر کلک کرنے پر step 1
+  const handleCloseModal = () => setModalStep(0);
   return (
     <nav className="w-full bg-white shadow-sm border-b px-6 py-4 ">
       {/* Main container */}
@@ -36,9 +41,18 @@ export default function Navbar() {
           <a href="/jobs" className="hover:text-blue-600 font-md text-lg">Jobs</a>
           <FiHeart className="cursor-pointer hover:text-blue-600 text-2xl" />
           <FiBell className="cursor-pointer hover:text-blue-600 text-2xl" />
-          <button className="bg-gray-300 rounded-md px-3 py-1 hover:bg-gray-100">
+          <button onClick={handleOpenModal} 
+          className="bg-gray-300 rounded-md px-3 py-1 hover:bg-gray-100"> 
             Sign In
           </button>
+         <Modal isOpen={modalStep > 0} onClose={handleCloseModal}>
+        {/* ModalContent کو current step اور step change کرنے کا function بھیجیں گے */}
+        <ModalContent 
+          currentStep={modalStep} 
+          setModalStep={setModalStep} 
+          onClose={handleCloseModal}
+        />
+      </Modal>
         </div>
 
         {/* Mobile menu button */}
@@ -69,9 +83,20 @@ export default function Navbar() {
               <FiHeart className="cursor-pointer hover:text-blue-600" />
               <FiBell className="cursor-pointer hover:text-blue-600" />
             </div>
-            <button className="border border-gray-300 rounded-md px-4 py-1 hover:bg-gray-100">
+            <button
+             onClick={handleOpenModal}
+             className="border border-gray-300 rounded-md px-4 py-1 hover:bg-gray-100">
               Sign In
             </button>
+            {/* Modal Component */}
+      <Modal isOpen={modalStep > 0} onClose={handleCloseModal}>
+        {/* ModalContent کو current step اور step change کرنے کا function بھیجیں گے */}
+        <ModalContent 
+          currentStep={modalStep} 
+          setModalStep={setModalStep} 
+          onClose={handleCloseModal}
+        />
+      </Modal>
           </div>
         </div>
       )}

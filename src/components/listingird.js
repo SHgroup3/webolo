@@ -2,9 +2,11 @@
 import React from 'react';
 import ListingCard from '../components/listingcard';
 
+
 // Sample Data (इमेज के अनुसार डेटा)
 const listingsData = [
   {
+    id:'121',
     price: '$875,000',
     details: '2 bed 2 bath 1405 sqft Built in 1988',
     address: '8-11952 64 Avenue, Delta, BC · Sunshine Hills Woods',
@@ -16,6 +18,7 @@ const listingsData = [
     isCommercial: false
   },
   {
+    id:'122',
     price: '$2,000',
     details: '– bed – bath 2000-2500 sqft',
     address: '71 Harris Place, Ottawa, ON · Meadowlands/St. Claire...',
@@ -27,6 +30,7 @@ const listingsData = [
     isCommercial: false
   },
   {
+    id:'123',
     price: '$800 gross lease',
     details: 'Office 22000 sqft',
     address: '200C-4275 Innes Road, Ottawa, ON · Fallingbrook/Gard...',
@@ -38,6 +42,7 @@ const listingsData = [
     isCommercial: true
   },
     {
+    id:'124',
     price: '$875,000',
     details: '2 bed 2 bath 1405 sqft Built in 1988',
     address: '8-11952 64 Avenue, Delta, BC · Sunshine Hills Woods',
@@ -49,6 +54,7 @@ const listingsData = [
     isCommercial: false
   },
   {
+    id:'125',
     price: '$2,000',
     details: '– bed – bath 2000-2500 sqft',
     address: '71 Harris Place, Ottawa, ON · Meadowlands/St. Claire...',
@@ -60,6 +66,7 @@ const listingsData = [
     isCommercial: false
   },
   {
+    id:'126',
     price: '$800 gross lease',
     details: 'Office 22000 sqft',
     address: '200C-4275 Innes Road, Ottawa, ON · Fallingbrook/Gard...',
@@ -71,6 +78,7 @@ const listingsData = [
     isCommercial: true
   },
   {
+    id:'127',
     price: '$875,000',
     details: '2 bed 2 bath 1405 sqft Built in 1988',
     address: '8-11952 64 Avenue, Delta, BC · Sunshine Hills Woods',
@@ -82,6 +90,7 @@ const listingsData = [
     isCommercial: false
   },
   {
+    id:'128',
     price: '$2,000',
     details: '– bed – bath 2000-2500 sqft',
     address: '71 Harris Place, Ottawa, ON · Meadowlands/St. Claire...',
@@ -93,6 +102,7 @@ const listingsData = [
     isCommercial: false
   },
   {
+    id:'129',
     price: '$800 gross lease',
     details: 'Office 22000 sqft',
     address: '200C-4275 Innes Road, Ottawa, ON · Fallingbrook/Gard...',
@@ -116,8 +126,10 @@ const ListingGrid = () => {
         lg:grid-cols-3
         xl:grid-cols-3"
       >
-        {listingsData.map((listing, index) => (
-          <ListingCard key={index} data={listing} />
+        {listingsData.map((listing) => (
+          <ListingCard 
+            key={listing.id} 
+            listing={listing} />
         ))}
       </div>
     </div>

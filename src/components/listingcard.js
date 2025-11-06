@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const ListingCard = ({ data }) => {
-  const { 
+const ListingCard = ({listing}) => {
+ const { 
+    id,
     price, 
     details, 
     address, 
@@ -12,9 +14,12 @@ const ListingCard = ({ data }) => {
     image, 
     time, 
     isCommercial 
-  } = data;
-
+  } = listing;
   return (
+    <Link 
+      to={`/listing/${id}`}
+      style={{ textDecoration: 'none', color: 'inherit' }}
+    >
     <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100">
       
       {/* Image Section */}
@@ -70,6 +75,7 @@ const ListingCard = ({ data }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

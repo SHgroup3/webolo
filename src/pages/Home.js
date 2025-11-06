@@ -72,9 +72,9 @@ export default function Home(){
     </div>
         <div 
         className="grid gap-x-6 gap-y-4 justify-start px-8
-          sm:grid-cols-2       /* Phone Screens (640px tak): 2 columns */
-          md:grid-cols-3       /* Tablet Screens (768px tak): 3 columns */
-          lg:grid-cols-4       /* Laptop/Large Screens (1024px aur upar): 4 columns */
+          sm:grid-cols-2       /* Phone Screens (640px tak):
+          md:grid-cols-3       /* Tablet Screens (768px tak):
+          lg:grid-cols-4       /* Laptop/Large Screens (1024px aur upar):
         "
       >
           <div className="text-black leading-loose">
