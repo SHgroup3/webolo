@@ -10,14 +10,7 @@ export default function LearnPage() {
 
   return (
     <header className="page-header container mx-auto mb-32 px-4">
-      <a
-        href="https://www.zolo.ca/blog/"
-        className="text-sm md:text-base inline-flex items-center"
-      >
-        <span className="mr-1">←</span> Back to VState Homebase
-      </a>
-
-      <h1 className="page-title text-3xl md:text-5xl leading-tight mt-10 mb-3 md:mb-8 max-w-4xl mx-auto text-center md:text-center">
+        <h1 className="page-title text-3xl md:text-5xl leading-tight mt-10 mb-3 md:mb-8 max-w-4xl mx-auto text-center md:text-center">
         Home Buying
       </h1>
 
