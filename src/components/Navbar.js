@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { FiSearch, FiHeart, FiBell, FiMenu, FiX } from "react-icons/fi";
 import VState from "../assets/VState.jpeg";
+import vlogo from "../assets/vlogo.png"
 import Modal from "./modal";
 import ModalContent from "./ModelContent";
 import { Link, useNavigate } from "react-router-dom";
@@ -63,8 +64,13 @@ export default function Navbar() {
           <img
             src={VState}
             alt="logo"
-            className="h-10 w-auto object-contain"
+            className="hidden sm:block h-12 w-auto object-contain"
           />
+          <img
+        src={vlogo}
+        alt="VState Mobile Logo"
+        className="block sm:hidden h-10 w-auto object-contain"
+      />
           <div className="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2 w-96">
             <FiSearch className="text-gray-500 mr-2" />
             <input
