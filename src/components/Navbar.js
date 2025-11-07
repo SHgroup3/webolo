@@ -214,20 +214,120 @@ export default function Navbar() {
             />
           </div>
 
-          <Link to="/buy" className="block text-gray-700 hover:text-blue-600">
-            Buy
-          </Link>
-          <Link to="/sell" className="block text-gray-700 hover:text-blue-600">
-            Sell
-          </Link>
+           <div className="relative">
+            <button
+              onClick={toggleBuyDropdown}
+              className="flex items-center font-semibold hover:text-blue-600"
+            >
+              Buy
+              <svg
+                className={`w-4 h-4 ml-1 transition-transform ${
+                  isBuyOpen ? "rotate-180" : ""
+                }`}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+
+            {isBuyOpen && (
+              <div className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg z-50">
+                {buyMenuItems.map((item, index) => (
+                  <Link
+                    key={index}
+                    to={item.to}
+                    onClick={() => setIsBuyOpen(false)}
+                    className={`block px-4 py-2 text-sm hover:bg-gray-100 ${
+                      item.isButton
+                        ? "border-t border-gray-200 text-blue-600 font-semibold"
+                        : "text-gray-700"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+           <div className="relative">
+            <button
+              onClick={toggleSellDropdown}
+              className="flex items-center font-semibold hover:text-blue-600"
+            >
+              Sell
+              <svg
+                className={`w-4 h-4 ml-1 transition-transform ${
+                  isSellOpen ? "rotate-180" : ""
+                }`}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+
+            {isSellOpen && (
+              <div className="absolute right-0 mt-2 w-64 bg-white border rounded-lg shadow-lg z-50">
+                {sellMenuItems.map((item, index) => (
+                  <Link
+                    key={index}
+                    to={item.to}
+                    onClick={() => setIsSellOpen(false)}
+                    className={`block px-4 py-2 text-sm hover:bg-gray-100 ${
+                      item.isButton
+                        ? "border-t border-gray-200 text-blue-600 font-semibold"
+                        : "text-gray-700"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
           <Link to="/blog" className="block text-gray-700 hover:text-blue-600">
             Blog
           </Link>
           <Link to="/jobs" className="block text-gray-700 hover:text-blue-600">
             Jobs
           </Link>
-          <Link to="/notifications" className="block text-gray-700 hover:text-blue-600">
-            Notifications
+          <div className="relative" ref={dropdownRef}>
+            <FiHeart
+              className="cursor-pointer hover:text-blue-600 text-2xl"
+              onClick={() => setOpen((prev) => !prev)}
+            />
+            {open && (
+              <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                <ul className="text-gray-700">
+                  <li
+                    onClick={() => handleNavigate("/saved-searches")}
+                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  >
+                    Saved Searches
+                  </li>
+                  <li
+                    onClick={() => handleNavigate("/saved-homes")}
+                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  >
+                    Saved Homes
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
+                    <Link to="/notifications">
+            <FiBell className="cursor-pointer hover:text-blue-600 text-2xl" />
           </Link>
           <button
             onClick={handleOpenModal}
