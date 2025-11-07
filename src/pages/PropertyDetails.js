@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { FaMapMarkerAlt, FaShare, FaSave, FaBed, FaBath, FaHome, FaCheckCircle, FaPlayCircle, FaLock } from 'react-icons/fa'; // FaPlayCircle icon ke liye
 import { Lock, Camera } from 'lucide-react';
-import map from '../assets/map.jpeg'
+import map from '../assets/map.jpeg';
+import Footer from '../components/Footer';
 
 const listingsData = [
     {
@@ -90,6 +91,150 @@ const listingsData = [
         status: 'For Sale',
         added_days: '56 days ago',
         image: 'https://photos.zolo.ca/8-11952-64-avenue-delta-R2653259-1.jpg',
+        description: 'Welcome to 45 Anne Street! This well built brick raised ranch is set on a wide lot on a peaceful crescent. It has an attached garage, concrete driveway, durable metal roof and plenty of upgrades! The main floor boasts modern open concept living with plenty of natural light throughout. The kitchen features an island, granite countertops, a convenient pantry with coffee nook area and stainless steel appliances to complete the modern look. Also on this level are three well appointed bedrooms and a full bathroom. On the lower level you’ll find a spacious room with above grade windows. It could be used as a second living area, gym, or recreational room. You’ll also find a fully finished laundry room with convenient storage solutions and the bright primary bedroom complete with a walk-in closet, updated ensuite and den which would be perfect for a home office or flex space. Outside, unwind in your fully fenced backyard from the comfort of your deck that spans the entire width of the home. Have you always wanted a swimming pool? This yard is a perfect spot for one, with plenty of room left over for gardening or a play area for the kids. This home is located close to parks and schools and has easy access to the 401. This is a must-see, book your showing today!',
+        more_details: {
+            property: {
+                Status: 'Sale', Type: 'Detached', Style: 'Bungalow-Raised', Size: '700-1100', Age: '31-50', Retirement: 'N', Area: 'Elgin', Community: 'Aylmer', Assessment_Year: '2025'
+            },
+            inside: {
+                Bedrooms: '3', 'Bedrooms Plus': '1', Bathrooms: '2', Kitchens: '1', Rooms: '11', 'Den/Family Room': 'Y', 'Central Vac': 'N', 'Ensuite Laundry': 'N', 'Air Conditioning': 'Central Air', Fireplace: 'N', Handicap_Equipped: 'N'
+            },
+            fees: {
+                Taxes: '3996', 'Tax Year': '2025', 'Tax Legal Description': 'PCL 119-1 SEC ML3 LT 119 PL ML3 AYLMER', Utilities: { Electricity: 'Y', Gas: 'Y', Cable: 'A', Telephone: 'A' },
+            },
+            highlights: ['Rec./Commum Centre', 'School', 'School Bus Route', 'Electric Car Charger', 'Fenced Yard', 'Park'],
+            land: {
+                Fronting_On: 'E', Frontage: '55.67'
+            }
+    },
+    sold_history: [
+            { mls: '10366903', date: 'Oct 20, 2025', type: 'Listed', price: '$618,000' },
+            { mls: '10366902', date: 'Sept 1, 2025', type: 'Sold', price: '$595,000' },
+        ],
+        home_value: {
+            approximate_value: '$618,000',
+            beds: '2 bedroom'
+        },
+        about_text: {
+            homes_for_sale: 1006,
+            city: 'Kamloops',
+            neighbourhood_homes: 5,
+            city_homes: 268,
+            average_price: '$490,809',
+            approx_mortgage: '$1,791',
+            text: 'This home is located at 6709 Ashcroft Road in Kamloops, British Columbia. Nearby cities include Tobiano, Monte Lake (westwold) and Mclure/insula. Ashcroft Road has 5 homes currently for sale, while the city of Kamloops has 268 homes for sale. The average listed price of a property in the community near ashcroft-road is $490,809, with an approximate mortgage of $1,791 per month. Apartments make up less than one quarter of properties for sale in the neighbourhood around 6709 Ashcroft Road.',
+            disclaimer: 'Monthly payments are an estimate based on a mortgage with 20% down @ 2.65% with a 5-yr Variable rate'
+        },
+        faqs: [
+            { question: 'How many bedrooms and bathrooms does this home have?', answer: 'This property has 3 bedrooms and 2 bathrooms, as per the current listing data.' },
+            { question: 'Is 6709 Ashcroft Road, Kamloops, walkable?', answer: 'Based on our analysis, this area has a car-dependent rating with limited transit and requires a car for most errands.' },
+        ],
+        footer_links: {
+            nearby_cities: [
+                'Kamloops Homes For Sale', 'Tobiano Homes For Sale', 'Logan Lake Homes For Sale', 
+                'Barriere Homes For Sale', 'Merritt Homes For Sale', 'Chase Homes For Sale', 
+                'Bridge Lake Homes For Sale', 'Falkland Homes For Sale', 'Sorrento Homes For Sale', 
+                'Scotch Creek Homes For Sale'
+            ],
+            popular_cities: [
+                'Coquitlam Homes For Sale', 'Richmond Hill Homes For Sale', 'Abbotsford Homes For Sale', 
+                'Barrie Homes For Sale', 'St. Catharines Homes For Sale', 'Windsor Homes For Sale', 
+                'Burlington Homes For Sale', 'North Vancouver Homes For Sale', 'London South Homes For Sale', 
+                'Maple Ridge Homes For Sale'
+            ],
+            recent_listings: [
+                '31-2171 Van Horne Drive, Kamloops', '158-8800 Dallas Drive, Kamloops', '891 Regent Crescent, Kamloops', 
+                '203 Mattoch Mckeague Road, Kamloops', '1800 Paul Road, Kamloops', '2932 Piva Road, Kamloops', 
+                '755 Barrie Drive, Kamloops', '38 2022 Pacific Way, Kamloops', '105-1993 Quappelle Boulevard, Kamloops', 
+                '25-2860 Valleyview Drive, Kamloops'
+            ]
+        },
+    },
+        {
+        id: '123',
+        address: '806 - 151 Avenue Road',
+        city: 'Toronto, Amex',
+        price: '$3,525,000',
+        est_mrg_pay: '$19,992 /mo',
+        price_change: '-$55,000',
+        beds: '2+1',
+        baths: '3',
+        sqft_range: '2230 - 2499 sqft',
+        status: 'For Sale',
+        added_days: '56 days ago',
+        image: 'https://photos.zolo.ca/200c-4275-innes-road-ottawa-X12483398-1-p768.jpg?2025-10-27+09%3A45%3A13',
+        description: 'Welcome to 45 Anne Street! This well built brick raised ranch is set on a wide lot on a peaceful crescent. It has an attached garage, concrete driveway, durable metal roof and plenty of upgrades! The main floor boasts modern open concept living with plenty of natural light throughout. The kitchen features an island, granite countertops, a convenient pantry with coffee nook area and stainless steel appliances to complete the modern look. Also on this level are three well appointed bedrooms and a full bathroom. On the lower level you’ll find a spacious room with above grade windows. It could be used as a second living area, gym, or recreational room. You’ll also find a fully finished laundry room with convenient storage solutions and the bright primary bedroom complete with a walk-in closet, updated ensuite and den which would be perfect for a home office or flex space. Outside, unwind in your fully fenced backyard from the comfort of your deck that spans the entire width of the home. Have you always wanted a swimming pool? This yard is a perfect spot for one, with plenty of room left over for gardening or a play area for the kids. This home is located close to parks and schools and has easy access to the 401. This is a must-see, book your showing today!',
+        more_details: {
+            property: {
+                Status: 'Sale', Type: 'Detached', Style: 'Bungalow-Raised', Size: '700-1100', Age: '31-50', Retirement: 'N', Area: 'Elgin', Community: 'Aylmer', Assessment_Year: '2025'
+            },
+            inside: {
+                Bedrooms: '3', 'Bedrooms Plus': '1', Bathrooms: '2', Kitchens: '1', Rooms: '11', 'Den/Family Room': 'Y', 'Central Vac': 'N', 'Ensuite Laundry': 'N', 'Air Conditioning': 'Central Air', Fireplace: 'N', Handicap_Equipped: 'N'
+            },
+            fees: {
+                Taxes: '3996', 'Tax Year': '2025', 'Tax Legal Description': 'PCL 119-1 SEC ML3 LT 119 PL ML3 AYLMER', Utilities: { Electricity: 'Y', Gas: 'Y', Cable: 'A', Telephone: 'A' },
+            },
+            highlights: ['Rec./Commum Centre', 'School', 'School Bus Route', 'Electric Car Charger', 'Fenced Yard', 'Park'],
+            land: {
+                Fronting_On: 'E', Frontage: '55.67'
+            }
+    },
+    sold_history: [
+            { mls: '10366903', date: 'Oct 20, 2025', type: 'Listed', price: '$618,000' },
+            { mls: '10366902', date: 'Sept 1, 2025', type: 'Sold', price: '$595,000' },
+        ],
+        home_value: {
+            approximate_value: '$618,000',
+            beds: '2 bedroom'
+        },
+        about_text: {
+            homes_for_sale: 1006,
+            city: 'Kamloops',
+            neighbourhood_homes: 5,
+            city_homes: 268,
+            average_price: '$490,809',
+            approx_mortgage: '$1,791',
+            text: 'This home is located at 6709 Ashcroft Road in Kamloops, British Columbia. Nearby cities include Tobiano, Monte Lake (westwold) and Mclure/insula. Ashcroft Road has 5 homes currently for sale, while the city of Kamloops has 268 homes for sale. The average listed price of a property in the community near ashcroft-road is $490,809, with an approximate mortgage of $1,791 per month. Apartments make up less than one quarter of properties for sale in the neighbourhood around 6709 Ashcroft Road.',
+            disclaimer: 'Monthly payments are an estimate based on a mortgage with 20% down @ 2.65% with a 5-yr Variable rate'
+        },
+        faqs: [
+            { question: 'How many bedrooms and bathrooms does this home have?', answer: 'This property has 3 bedrooms and 2 bathrooms, as per the current listing data.' },
+            { question: 'Is 6709 Ashcroft Road, Kamloops, walkable?', answer: 'Based on our analysis, this area has a car-dependent rating with limited transit and requires a car for most errands.' },
+        ],
+        footer_links: {
+            nearby_cities: [
+                'Kamloops Homes For Sale', 'Tobiano Homes For Sale', 'Logan Lake Homes For Sale', 
+                'Barriere Homes For Sale', 'Merritt Homes For Sale', 'Chase Homes For Sale', 
+                'Bridge Lake Homes For Sale', 'Falkland Homes For Sale', 'Sorrento Homes For Sale', 
+                'Scotch Creek Homes For Sale'
+            ],
+            popular_cities: [
+                'Coquitlam Homes For Sale', 'Richmond Hill Homes For Sale', 'Abbotsford Homes For Sale', 
+                'Barrie Homes For Sale', 'St. Catharines Homes For Sale', 'Windsor Homes For Sale', 
+                'Burlington Homes For Sale', 'North Vancouver Homes For Sale', 'London South Homes For Sale', 
+                'Maple Ridge Homes For Sale'
+            ],
+            recent_listings: [
+                '31-2171 Van Horne Drive, Kamloops', '158-8800 Dallas Drive, Kamloops', '891 Regent Crescent, Kamloops', 
+                '203 Mattoch Mckeague Road, Kamloops', '1800 Paul Road, Kamloops', '2932 Piva Road, Kamloops', 
+                '755 Barrie Drive, Kamloops', '38 2022 Pacific Way, Kamloops', '105-1993 Quappelle Boulevard, Kamloops', 
+                '25-2860 Valleyview Drive, Kamloops'
+            ]
+        },
+    },
+           {
+        id: '124',
+        address: '806 - 151 Avenue Road',
+        city: 'Toronto, Amex',
+        price: '$3,525,000',
+        est_mrg_pay: '$19,992 /mo',
+        price_change: '-$55,000',
+        beds: '2+1',
+        baths: '3',
+        sqft_range: '2230 - 2499 sqft',
+        status: 'For Sale',
+        added_days: '56 days ago',
+        image: 'https://photos.zolo.ca/6-10-centennial-road-orangeville-W12483362-1-p768.jpg?2025-10-27+09%3A44%3A29',
         description: 'Welcome to 45 Anne Street! This well built brick raised ranch is set on a wide lot on a peaceful crescent. It has an attached garage, concrete driveway, durable metal roof and plenty of upgrades! The main floor boasts modern open concept living with plenty of natural light throughout. The kitchen features an island, granite countertops, a convenient pantry with coffee nook area and stainless steel appliances to complete the modern look. Also on this level are three well appointed bedrooms and a full bathroom. On the lower level you’ll find a spacious room with above grade windows. It could be used as a second living area, gym, or recreational room. You’ll also find a fully finished laundry room with convenient storage solutions and the bright primary bedroom complete with a walk-in closet, updated ensuite and den which would be perfect for a home office or flex space. Outside, unwind in your fully fenced backyard from the comfort of your deck that spans the entire width of the home. Have you always wanted a swimming pool? This yard is a perfect spot for one, with plenty of room left over for gardening or a play area for the kids. This home is located close to parks and schools and has easy access to the 401. This is a must-see, book your showing today!',
         more_details: {
             property: {
@@ -565,7 +710,10 @@ function PropertyDetail() {
                             </ul>
                         </div>
                     </div>
-                </div></div></div></div>
+                </div></div></div>
+                <Footer />
+                </div>
+                
     );
 }
 

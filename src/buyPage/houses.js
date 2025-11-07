@@ -2,20 +2,13 @@ import React from "react";
 import ListingGrid from "../components/listingird";
 import Footer from "../components/Footer";
 
-export default function Home(){
+export default function Houses(){
     return(
         <div className="flex flex-col w-full">
   <div className="px-4 mr-auto">
     <h1 className="font-bold text-3xl flex items-center mt-4">
-      Canada Real Estates
+      Houses For Sale
     </h1>
-    <p className="text-xl mt-2">
-      Refine your Canada real estate search by price, bedroom, or type (house, townhouse, or condo).
-      View up-to-date MLS® listings in Canada.
-    </p>
-    <p className="text-md mt-4 text-black font-bold">
-      247242 homes for sale in Canada
-    </p>
   </div>
         <ListingGrid />
 <hr className="border border-gray-200 my-4 w-full"/>

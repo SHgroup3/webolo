@@ -16,9 +16,6 @@ export default function Footer(){
     Offices <span className="ml-1">+</span>
   </button>
 </div>
-
-        
-        {/* Right Section: Join Button */}
         <div className="flex items-center space-x-12">
           <h2 className="text-xl font-bold text-gray-800 hidden lg:block">Are You a REALTOR®?</h2>
           <button className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg text-base whitespace-nowrap">
@@ -27,8 +24,6 @@ export default function Footer(){
         </div>
       </div>
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
-        
-        {/* Listing Details (Left) */}
         <div className="text-sm mb-4 sm:mb-0">
                     <div className="flex space-x-4 justify-left">
           <a href="fb" className="border border-gray-400 p-2 rounded-full hover:bg-gray-100">
