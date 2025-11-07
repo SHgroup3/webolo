@@ -16,6 +16,9 @@ import HomeWorthEstimate from "./pages/myWorth";
 import SavedHome from "./pages/saveHome";
 import SavedSearches from "./pages/saveSearch";
 import Notification from "./pages/notification";
+import LearnPage from "./pages/learn";
+import LearnSellPage from "./pages/selling";
+import Listing from "./pages/listing";
 
 export default function App(){
   return (
@@ -38,6 +41,10 @@ export default function App(){
         <Route path="/saved-homes" element={<SavedHome />}/>
         <Route path="/saved-searches" element={<SavedSearches />}/>
         <Route path="/notifications" element={<Notification />}/>
+        <Route path="/learn-buying" element={<LearnPage />}/>
+        <Route path="/learn-selling" element={<LearnSellPage />}/>
+        <Route path="/new-listings" element={<Listing />}/>
+
       </Routes>
      </div>
 </Router>   

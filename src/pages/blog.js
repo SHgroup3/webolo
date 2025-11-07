@@ -17,9 +17,54 @@ const navLinks = [
   'Home Improvement', 'Home Design', 'Places', 'Lifestyle', 'Glossary'
 ];
 const latestArticles = [
-  { title: 'The Future of Real Estate', image: 'https://placehold.co/400x250/F87171/FFFFFF?text=Article+1' },
-  { title: 'Smart Home Technology Trends', image: 'https://placehold.co/400x250/34D399/FFFFFF?text=Article+2' },
-  { title: 'Best Time to Sell in Canada', image: 'https://placehold.co/400x250/60A5FA/FFFFFF?text=Article+3' },
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2025/11/b-lenders-canada-424x283.jpg' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2024/08/sold-home-prices-424x283.png' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2024/05/Property-Tax-by-Province-424x283.png' },
+];
+const BuyingArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2019/03/down-payment-assistance-programs-hero-424x239.jpg' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2023/05/What-Home-Buyers-Want-424x283.png' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2018/03/large-home-with-vibrant-landscaping-424x239.jpeg' },
+];
+const SellingArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2020/08/woman-sitting-in-a-room-reading-424x239.jpeg' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2019/04/two-women-and-one-man-collaborating-424x239.jpeg' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2024/10/long-distance-movers-canada-424x283.png' },
+];
+const RentingArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2020/12/the-cost-of-owning-a-fur-friend-in-canada-hero-1-424x239.jpg' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2020/08/renters-guide-hero-424x239.jpg' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2020/01/responsibilities-of-a-renter-hero-424x239.jpg' },
+];
+const NewsArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2023/09/Home-Buyer-Sentiment-Survey-424x283.png' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2024/10/Zenith-Awards-Top-Tips-For-2025-424x283.png' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2024/06/Advice-for-Buyers-and-Sellers-from-a-Real-Estate-Pro-424x283.png' },
+];
+const FinanceArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2020/08/mortage-default-guide-hero-424x239.jpg' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2024/08/sold-home-prices-424x283.png' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2024/03/How-much-does-home-insurance-cost-424x283.png' },
+];
+const ImprovementArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2022/03/84497-Hero-Images-Batch_4_Superside_D1-424x283.png' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2021/02/sustainable-home-upgrades-hero-424x239.jpg' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2018/03/diy-projects-for-homeowners-hero-424x239.jpg' },
+];
+const DesignArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2017/10/top-10-interior-designers-in-canada-hero-424x239.jpg' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2020/09/declutter-your-space-hero-424x239.jpg' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2023/12/Modern-Farmhouse-424x239.png' },
+];
+const PlacesArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2021/06/best-beaches-canada-424x283.png' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2023/07/Calgary-Noise-Bylaws-Regulations-424x283.png' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2025/06/tiny-homes-ontario-424x283.png' },
+];
+const LifestyleArticles = [
+  { title: 'The Future of Real Estate', image: 'https://www.zolo.ca/blog/wp-content/uploads/2018/09/Living-in-Suburbs-424x276.png' },
+  { title: 'Smart Home Technology Trends', image: 'https://www.zolo.ca/blog/wp-content/uploads/2023/08/The-Sims-Houses-424x283.png' },
+  { title: 'Best Time to Sell in Canada', image: 'https://www.zolo.ca/blog/wp-content/uploads/2020/12/hero-1-1-424x239.jpg' },
 ];
 
 const marketLinks = [
@@ -110,7 +155,7 @@ const Buying = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {BuyingArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -136,7 +181,7 @@ const Selling = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {SellingArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -162,7 +207,7 @@ const Renting = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {RentingArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -188,7 +233,7 @@ const NewsandTrends = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {NewsArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -214,7 +259,7 @@ const Finance = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {FinanceArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -240,7 +285,7 @@ const HomeImprovement = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {ImprovementArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -266,7 +311,7 @@ const Design = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {DesignArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -292,7 +337,7 @@ const Places = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {PlacesArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -318,7 +363,7 @@ const Lifestyle = () => (
       </a>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {latestArticles.map((article, index) => (
+      {LifestyleArticles.map((article, index) => (
         <article key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <img
             src={article.image}
@@ -338,7 +383,7 @@ const MarketLinksSection = () => (
   <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-x-12">
       <div className="mb-8 lg:mb-0 lg:col-span-1">
-        <h2 className="text-4xl sm:text-5xl font-extrabold leading-snug text-blue-600 tracking-tight">
+        <h2 className="text-4xl sm:text-5xl font-extrabold leading-snug text-blue-500 tracking-tight">
           Find homes <br className="hidden lg:inline"/>
           on VState
         </h2>
